@@ -478,15 +478,16 @@ def main():
         start_code = torch.randn([opt.n_samples, opt.C, opt.H // opt.f, opt.W // opt.f], device=device)
 
     precision_scope = autocast if opt.precision=="autocast" else nullcontext
-
-    ref_dir = os.path.join(opt.reference_path)
+# 	这个是参考目录和健康叶子目录分开的情况
+#    ref_dir = os.path.join(opt.reference_path)
 #    下面是之前用的一个文件夹中有image和ref
-#    ref_dir = os.path.join(opt.test_path, 'ref')
+    ref_dir = os.path.join(opt.test_path, 'ref')
     ref_img = os.listdir(ref_dir)
     imgs = [get_img_id(i) for i in ref_img]
-    img_dir = os.path.join(opt.image_path)
+# 	这个是参考目录和健康叶子目录分开的情况
+#    img_dir = os.path.join(opt.image_path)
 #    下面是之前用的一个文件夹中有image和ref
-#    img_dir = os.path.join(opt.test_path, 'image')
+    img_dir = os.path.join(opt.test_path, 'image')
     ref_img_dir = ref_dir
     predictor = None
 
