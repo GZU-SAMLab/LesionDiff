@@ -19,10 +19,10 @@ If you want to batch test, you can use `leaf_diseases/inference_bench_gd_auto.py
 ```
     python leaf_diseases/inference_bench_gd_auto.py 
     --config configs/leaf-diseases_with_disease.yaml
-    --test_path TestDataset 
+    --test_path TestDataset/apple 
     --outdir Result/inferenceTest 
     --ddim_steps 200 --ddim_eta 1.0 --scale 4 --seed 250 
     --ckpt models/last.ckpt 
     --max_size 250
 ```
-
+In `--test_path` you can change the type of plant you want to test based on the test set we provide
