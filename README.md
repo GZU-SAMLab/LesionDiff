@@ -31,7 +31,7 @@ If you want to batch test, you can use `leaf_diseases/inference_bench_gd_auto.py
 In `--test_path` you can change the type of plant you want to test based on the test set we provide
 
 # Framework
-![Framework](img/1.jpg)
+![Framework](img/1.png)
 
 # LGR-Net
 
