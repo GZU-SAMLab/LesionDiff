@@ -1,6 +1,9 @@
 ## PlantDid
 Information Transfer Diffusion Model-Based Synthetic Plant Diseases for Precise Plant Disease Identification
 
+# Abstract
+Precise identification of plant diseases is crucial for effective control and can significantly enhance crop yields. As deep learning techniques for identifying crop diseases become mainstream, training models typically require large-scale image datasets to improve accuracy and generalization. However, the acquisition of such datasets is often hindered by factors such as weather conditions, environmental variables, and different growth stages, which leads to the lack of sufficient and available plant disease images for plant disease diagnosis methods. To address this issue, we propose a lesion information transfer diffusion model (LesionDiff) to synthesize image data that aligns with human visual perception. Our model comprises three key components: an information preprocessing module, a disease data enhancement module, and a disease control generation module. The information preprocessing module employs GroundingDINO, fine-tuned for plant diseases, to accurately identify lesion areas on leaves. The disease data enhancement module utilizes a lesion-centered computing strategy to enrich the dataset with more correlation images, enabling the model to learn a broader range of visual and semantic lesion characteristics. Finally, the disease control generation module leverages the pre-trained CLIP model to extract guiding image features, prompting the diffusion model via U-Net with cross-attention (CAU-Net) to complete the missing regions of masked disease images. Experimental results show that with the help of synthetic plant disease images, the diagnostic model's average accuracy on original plant disease images increases by more than 3\%, demonstrating the effectiveness of LesionDiff in enhancing plant disease recognition models.
+
 ## Environment
 You can create a new Conda environment by running the following command:
 ```
@@ -26,3 +29,10 @@ If you want to batch test, you can use `leaf_diseases/inference_bench_gd_auto.py
     --max_size 250
 ```
 In `--test_path` you can change the type of plant you want to test based on the test set we provide
+
+# Framework
+![Framework](img/1.jpg)
+
+# LGR-Net
+
+# HLFA-Net
