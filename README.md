@@ -31,8 +31,25 @@ If you want to batch test, you can use `leaf_diseases/inference_bench_gd_auto.py
 In `--test_path` you can change the type of plant you want to test based on the test set we provide
 
 # Framework
-![Framework](img/1.png)
+![1](img/1.png)
 
-# LGR-Net
+# The presentation of LesionDiff and baseline generated images of plant diseases.
+![2](img/2.png)
 
-# HLFA-Net
+# Demonstrate the use of generated images to promote plant disease recognition performance.
+![3](img/3.png)
+
+# The demonstration of plant disease image generation with different $\lambda$
+![4](img/4.png)
+
+# The presentation of generated images based on correlation images obtained by different lesion location acquisition methods.
+![5](img/5.png)
+
+# The demonstration of generated images of plant diseases in different scenarios.
+![6](img/6.png)
+
+# The demonstration of the ethics and social impact of plant disease image generation.
+![7](img/7.png)
+
+# The demonstration of more plant disease image generation cases.
+![8](img/8.png)
